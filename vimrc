@@ -30,6 +30,9 @@ syntax on
 " chars used at end of line and tab
 set listchars=tab:▸\ ,eol:¬ 
 
+" tab settings
+set ts=4 sts=4 sw=4 noexpandtab
+
 
 """"""""""""""""""""
 " my mappings
