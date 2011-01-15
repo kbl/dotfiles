@@ -4,7 +4,6 @@ let mapleader=","
 set laststatus=2
 
 " status line settings
-"
 set statusline=%< " truncate the line at the beginning
 set statusline+=%f " relative path to edited file
 set statusline+=\ %m " red flag that informs if file was edited
@@ -20,20 +19,29 @@ set statusline+=\ Col:%3v " virtual column number
 " line numbers
 set nu
 
+" number of lines to keep above/below the cursor
+set scrolloff=5
+
 " colors
 set background=dark
 colorscheme ir_black
 syntax on
 
+" chars used at end of line and tab
+set listchars=tab:▸\ ,eol:¬ 
+
+
+""""""""""""""""""""
 " my mappings
-"
+""""""""""""""""""""
 " close all buffers and quit
 nmap <leader>q :qall<cr>
+" toggle tab/eol
+nmap <leader>l :set list!<cr>
 
+""""""""""""""""""""
 " my plugin related mappings
-"
-
-" my plugin related mappings
-"
+""""""""""""""""""""
 " toggle nerdtree plugin browsing window
 nmap <leader>p :NERDTreeToggle<cr>
+
