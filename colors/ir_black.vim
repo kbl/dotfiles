@@ -62,6 +62,12 @@ endif
 
 let colors_name = "ir_black"
 
+" vimdiff colors
+hi DiffAdd term=reverse cterm=bold ctermbg=blue ctermfg=white
+hi DiffChange term=reverse cterm=bold ctermbg=cyan ctermfg=black
+hi DiffText term=reverse cterm=bold ctermbg=gray ctermfg=black
+hi DiffDelete term=reverse cterm=bold ctermbg=gray ctermfg=black
+
 
 "hi Example         guifg=NONE        guibg=NONE        gui=NONE      ctermfg=NONE        ctermbg=NONE        cterm=NONE
 
