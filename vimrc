@@ -1,9 +1,15 @@
+" no compatible with vi
+set nocompatible 
+
 let mapleader=","
 
+filetype plugin on
+
+""""""""""""""""""""
+" status line settings
+""""""""""""""""""""
 " always show status line
 set laststatus=2
-
-" status line settings
 set statusline=%< " truncate the line at the beginning
 set statusline+=%f " relative path to edited file
 set statusline+=\ %m " red flag that informs if file was edited
@@ -18,7 +24,6 @@ set statusline+=\ Col:%3v " virtual column number
 
 " line numbers
 set nu
-
 " number of lines to keep above/below the cursor
 set scrolloff=5
 
