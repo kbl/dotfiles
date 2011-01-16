@@ -51,6 +51,7 @@ set softtabstop=4 " number of spaces that <Tab> uses whie editing
 set shiftwidth=4 " indenty by x spaces
 set expandtab " replace tab with spaces
 
+set cpoptions+=$ " put $ at the end of changed text
 
 """"""""""""""""""""
 " my mappings
