@@ -35,7 +35,7 @@ set autoindent " take indent of new lie from previous line
 set smartindent " smart autoindenting for C programs
 set columns=120 " number of columns in the display
 
-set foldmethod=indent " folding type
+set foldmethod=manual " folding type
 set foldminlines=2 " minimum number of lines for a fold to be closed
 
 set hlsearch " highlight matches with last search pattern
