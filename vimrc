@@ -60,6 +60,13 @@ set cpoptions+=$ " put $ at the end of changed text
 nmap <leader>q :qall<cr>
 " toggle tab/eol
 nmap <leader>l :set list!<cr>
+" fast edit of vimrc file
+nmap <leader>vimrc :e ~/.vimrc<cr>
+nmap <leader>reload :so ~/.vimrc<cr>
+
+" when line wrapping in turrned on move with virual lines usin jk
+noremap j gj
+noremap k gk
 
 """"""""""""""""""""
 " my plugin related mappings
