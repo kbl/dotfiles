@@ -1,5 +1,4 @@
-" no compatible with vi
-set nocompatible 
+set nocompatible " no compatible with vi
 
 let mapleader=","
 
@@ -8,8 +7,7 @@ filetype plugin on
 """"""""""""""""""""
 " status line settings
 """"""""""""""""""""
-" always show status line
-set laststatus=2
+set laststatus=2 " always show status line
 set statusline=%< " truncate the line at the beginning
 set statusline+=%f " relative path to edited file
 set statusline+=\ %m " red flag that informs if file was edited
@@ -22,21 +20,34 @@ set statusline+=\ Line:\ %l/%L " current line/lines in file
 set statusline+=\ [%p%%] " percentage through file
 set statusline+=\ Col:%3v " virtual column number
 
-" line numbers
-set nu
-" number of lines to keep above/below the cursor
-set scrolloff=5
 
-" colors
+set nu " line numbers
+set scrolloff=5 " number of lines to keep above/below the cursor
+set sidescrolloff=20 " min. nr. of columns to left and righ of cursor
+
 set background=dark
 colorscheme ir_black
 syntax on
 
-" chars used at end of line and tab
-set listchars=tab:▸\ ,eol:¬ 
+set autoindent " take indent of new lie from previous line
+set smartindent " smart autoindenting for C programs
+set columns=120 " number of columns in the display
 
-" tab settings
-set ts=4 sts=4 sw=4 noexpandtab
+set foldmethod=indent " folding type
+set foldminlines=2 " minimum number of lines for a fold to be closed
+
+set hlsearch " highlight matches with last search pattern
+set smartcase " no ignore case when pattern has uppercase
+set incsearch " higlight match while typing search pattern
+
+set history=100 " number of command-lines that are remembered
+
+set listchars=tab:▸\ ,eol:¬ " chars used at end of line and tab
+
+set tabstop=4 " number of spaces that <Tab> in file uses 
+set softtabstop=4 " number of spaces that <Tab> uses whie editing
+set shiftwidth=4 " indenty by x spaces
+set expandtab " replace tab with spaces
 
 
 """"""""""""""""""""
