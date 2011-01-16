@@ -3,10 +3,8 @@ set nocompatible " no compatible with vi
 let mapleader=","
 
 filetype plugin on
+filetype indent on
 
-""""""""""""""""""""
-" status line settings
-""""""""""""""""""""
 set laststatus=2 " always show status line
 set statusline=%< " truncate the line at the beginning
 set statusline+=%f " relative path to edited file
@@ -20,10 +18,14 @@ set statusline+=\ Line:\ %l/%L " current line/lines in file
 set statusline+=\ [%p%%] " percentage through file
 set statusline+=\ Col:%3v " virtual column number
 
+set showcmd " swhow (partial) command in status line
+set showmode " message on status line to show current mode
 
 set nu " line numbers
 set scrolloff=5 " number of lines to keep above/below the cursor
 set sidescrolloff=20 " min. nr. of columns to left and righ of cursor
+set sidescroll=1 " min. nr. of columns to scroll horizontally
+set nowrap " long lines doesnt wrap 
 
 set background=dark
 colorscheme ir_black
@@ -62,5 +64,5 @@ nmap <leader>l :set list!<cr>
 " my plugin related mappings
 """"""""""""""""""""
 " toggle nerdtree plugin browsing window
-nmap <leader>p :NERDTreeToggle<cr>
+nmap <silent> <leader>p :NERDTreeToggle<cr>
 
