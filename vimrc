@@ -53,6 +53,8 @@ set expandtab " replace tab with spaces
 
 set cpoptions+=$ " put $ at the end of changed text
 
+set hidden " don't unload buffer when it is abandoned (could hide buffer with unsaved changes)
+
 """"""""""""""""""""
 " my mappings
 """"""""""""""""""""
