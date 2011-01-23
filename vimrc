@@ -70,6 +70,12 @@ nmap <leader>reload :so ~/.vimrc<cr>
 noremap j gj
 noremap k gk
 
+" fast windows switching
+nmap <leader>h <C-W><C-H>
+nmap <leader>j <C-W><C-J>
+nmap <leader>k <C-W><C-K>
+nmap <leader>l <C-W><C-L>
+
 """"""""""""""""""""
 " my plugin related mappings
 """"""""""""""""""""
