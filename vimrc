@@ -2,6 +2,7 @@ set nocompatible " no compatible with vi
 
 let mapleader=","
 
+filetype on
 filetype plugin on
 filetype indent on
 
@@ -55,13 +56,18 @@ set cpoptions+=$ " put $ at the end of changed text
 
 set hidden " don't unload buffer when it is abandoned (could hide buffer with unsaved changes)
 
+set mousehide " hide mouse pointer while typing
+set virtualedit=all " allow the cursor to go to "invalid" places
+
+set wildmenu " use menu for command line completion
+
 """"""""""""""""""""
 " my mappings
 """"""""""""""""""""
 " close all buffers and quit
 nmap <leader>q :qall<cr>
 " toggle tab/eol
-nmap <leader>l :set list!<cr>
+nmap <leader>w :set list!<cr>
 " fast edit of vimrc file
 nmap <leader>vimrc :e ~/.vimrc<cr>
 nmap <leader>reload :so ~/.vimrc<cr>
