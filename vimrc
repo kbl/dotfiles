@@ -26,7 +26,7 @@ set nu " line numbers
 set scrolloff=5 " number of lines to keep above/below the cursor
 set sidescrolloff=20 " min. nr. of columns to left and righ of cursor
 set sidescroll=1 " min. nr. of columns to scroll horizontally
-set nowrap " long lines doesnt wrap 
+set nowrap " long lines doesnt wrap
 
 set background=dark
 colorscheme ir_black
@@ -47,7 +47,7 @@ set history=100 " number of command-lines that are remembered
 
 set listchars=tab:▸\ ,eol:¬ " chars used at end of line and tab
 
-set tabstop=4 " number of spaces that <Tab> in file uses 
+set tabstop=4 " number of spaces that <Tab> in file uses
 set softtabstop=4 " number of spaces that <Tab> uses whie editing
 set shiftwidth=4 " indenty by x spaces
 set expandtab " replace tab with spaces
@@ -67,14 +67,28 @@ set wildmenu " use menu for command line completion
 " close all buffers and quit
 nmap <leader>q :qall<cr>
 " toggle tab/eol
-nmap <leader>w :set list!<cr>
+nmap <leader>e :set list!<cr>
 " fast edit of vimrc file
 nmap <leader>vimrc :e ~/.vimrc<cr>
 nmap <leader>reload :so ~/.vimrc<cr>
 
-" when line wrapping in turrned on move with virual lines usin jk
+" when line wrapping in turrned on move with virual lines using jk
 noremap j gj
 noremap k gk
+
+" function from vimcasts.org
+function! <SID>StripTrailingWhitespaces()
+    " Preparation: save last search, and cursor position.
+    let _s=@/
+    let l = line(".")
+    let c = col(".")
+    " Do the business:
+    %s/\s\+$//e
+    " Clean up: restore previous search history, and cursor position
+    let @/=_s
+    call cursor(l, c)
+endfunction
+nmap <silent> <leader>w :call <SID>StripTrailingWhitespaces()<cr>
 
 " fast windows switching
 nmap <leader>h <C-W><C-H>
