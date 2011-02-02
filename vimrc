@@ -102,3 +102,6 @@ nmap <leader>l <C-W><C-L>
 " toggle nerdtree plugin browsing window
 nmap <silent> <leader>p :NERDTreeToggle<cr>
 
+" toggle taglist plugin browskin window
+nmap <silent> <leader>o :TlistToggle<cr>
+
