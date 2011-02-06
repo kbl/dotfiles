@@ -46,6 +46,7 @@ set incsearch " higlight match while typing search pattern
 set history=100 " number of command-lines that are remembered
 
 set listchars=tab:▸\ ,eol:¬ " chars used at end of line and tab
+set showbreak=… " string to use at the start of wrapped lines
 
 set tabstop=4 " number of spaces that <Tab> in file uses
 set softtabstop=4 " number of spaces that <Tab> uses whie editing
@@ -75,6 +76,9 @@ nmap <leader>reload :so ~/.vimrc<cr>
 " when line wrapping in turrned on move with virual lines using jk
 noremap j gj
 noremap k gk
+noremap $ g$
+noremap ^ g^
+noremap 0 g0
 
 " function from vimcasts.org
 function! <SID>StripTrailingWhitespaces()
@@ -89,6 +93,10 @@ function! <SID>StripTrailingWhitespaces()
     call cursor(l, c)
 endfunction
 nmap <silent> <leader>w :call <SID>StripTrailingWhitespaces()<cr>
+
+" vimcast #16 wraping files
+command Wrap set wrap linebreak nolist " wraplines, wrap on full words, hide white chars
+command Unwrap set nowrap nolinebreak list 
 
 " fast windows switching
 nmap <leader>h <C-W><C-H>
