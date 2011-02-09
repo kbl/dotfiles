@@ -62,6 +62,8 @@ set virtualedit=all " allow the cursor to go to "invalid" places
 
 set wildmenu " use menu for command line completion
 
+let g:CommandTMatchWindowAtTop=1 " commant-t at top
+
 """"""""""""""""""""
 " my mappings
 """"""""""""""""""""
@@ -95,8 +97,8 @@ endfunction
 nmap <silent> <leader>w :call <SID>StripTrailingWhitespaces()<cr>
 
 " vimcast #16 wraping files
-command Wrap set wrap linebreak nolist " wraplines, wrap on full words, hide white chars
-command Unwrap set nowrap nolinebreak list 
+command! Wrap set wrap linebreak nolist " wraplines, wrap on full words, hide white chars
+command! Unwrap set nowrap nolinebreak list 
 
 " fast windows switching
 nmap <leader>h <C-W><C-H>
