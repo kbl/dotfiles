@@ -54,6 +54,7 @@ set shiftwidth=4 " indenty by x spaces
 set expandtab " replace tab with spaces
 
 set cpoptions+=$ " put $ at the end of changed text
+set backspace=2 " how backspace works at start of line
 
 set hidden " don't unload buffer when it is abandoned (could hide buffer with unsaved changes)
 
@@ -98,13 +99,19 @@ nmap <silent> <leader>w :call <SID>StripTrailingWhitespaces()<cr>
 
 " vimcast #16 wraping files
 command! Wrap set wrap linebreak nolist " wraplines, wrap on full words, hide white chars
-command! Unwrap set nowrap nolinebreak list 
+command! Unwrap set nowrap nolinebreak list
 
 " fast windows switching
 nmap <leader>h <C-W><C-H>
 nmap <leader>j <C-W><C-J>
 nmap <leader>k <C-W><C-K>
 nmap <leader>l <C-W><C-L>
+
+" line moving
+nmap <C-Up> [e
+nmap <C-Down> ]e
+vmap <C-Up> [egv
+vmap <C-Down> ]egv
 
 """"""""""""""""""""
 " my plugin related mappings
