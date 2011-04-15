@@ -90,6 +90,11 @@ noremap $ g$
 noremap ^ g^
 noremap 0 g0
 
+" get rid of F1 in vim
+inoremap <F1> <ESC>
+nnoremap <F1> <ESC>
+vnoremap <F1> <ESC>
+
 " function from vimcasts.org
 function! <SID>StripTrailingWhitespaces()
     " Preparation: save last search, and cursor position.
@@ -119,6 +124,9 @@ nmap <C-Up> [e
 nmap <C-Down> ]e
 vmap <C-Up> [egv
 vmap <C-Down> ]egv
+
+" stop higlithting searched text
+nmap <silent> <leader><space> :noh<cr>
 
 """"""""""""""""""""
 " my plugin related mappings
