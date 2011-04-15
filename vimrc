@@ -63,6 +63,8 @@ set virtualedit=all " allow the cursor to go to "invalid" places
 
 set wildmenu " use menu for command line completion
 
+set relativenumber " show the line number ralative to the line whith the cursor
+
 let g:CommandTMatchWindowAtTop=1 " commant-t at top
 
 """"""""""""""""""""
