@@ -70,6 +70,11 @@ let g:CommandTMatchWindowAtTop=1 " commant-t at top
 """"""""""""""""""""
 " my mappings
 """"""""""""""""""""
+
+" use standard not magic vim regexp
+nnoremap / /\v
+vnoremap / /\v
+
 " close all buffers and quit
 nmap <leader>q :qall<cr>
 " toggle tab/eol
