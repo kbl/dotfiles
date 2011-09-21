@@ -26,7 +26,6 @@ set showmode " message on status line to show current mode
 
 set nu " line numbers
 set scrolloff=5 " number of lines to keep above/below the cursor
-set sidescrolloff=20 " min. nr. of columns to left and righ of cursor
 set sidescroll=1 " min. nr. of columns to scroll horizontally
 set nowrap " long lines doesnt wrap
 
@@ -64,8 +63,6 @@ set mousehide " hide mouse pointer while typing
 set virtualedit=all " allow the cursor to go to "invalid" places
 
 set wildmenu " use menu for command line completion
-
-set relativenumber " show the line number ralative to the line whith the cursor
 
 let g:CommandTMatchWindowAtTop=1 " commant-t at top
 
