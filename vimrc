@@ -132,6 +132,7 @@ nmap <silent> <leader><space> :noh<cr>
 """"""""""""""""""""
 " toggle nerdtree plugin browsing window
 nmap <silent> <leader>p :NERDTreeToggle<cr>
+nmap <silent> <leader>P :NERDTreeFind<cr>
 
 " toggle taglist plugin browskin window
 nmap <silent> <leader>o :TlistToggle<cr>
