@@ -64,6 +64,8 @@ set virtualedit=all " allow the cursor to go to "invalid" places
 
 set wildmenu " use menu for command line completion
 
+set t_Co=256 " 256 colors in terminal
+
 let g:CommandTMatchWindowAtTop=1 " commant-t at top
 
 """"""""""""""""""""
