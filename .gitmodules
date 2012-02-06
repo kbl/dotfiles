@@ -25,3 +25,6 @@
 [submodule "bundle/mango"]
 	path = bundle/mango
 	url = https://github.com/goatslacker/mango.vim
+[submodule "bundle/puppet"]
+	path = bundle/puppet
+	url = https://github.com/uggedal/puppet-vim.git
