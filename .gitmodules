@@ -28,3 +28,6 @@
 [submodule "bundle/puppet"]
 	path = bundle/puppet
 	url = https://github.com/uggedal/puppet-vim.git
+[submodule "bundle/command-t"]
+	path = bundle/command-t
+	url = git://git.wincent.com/command-t.git
