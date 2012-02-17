@@ -1,0 +1,11 @@
+[user]
+	name = Marcin Pietraszek
+[push]
+	default = tracking
+[alias]
+	st = status
+	co = checkout
+	df = diff
+	ci = commit
+[core]
+	excludesfile = /home/mapi/.globalignore
