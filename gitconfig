@@ -2,10 +2,19 @@
 	name = Marcin Pietraszek
 [push]
 	default = tracking
+[core]
+	editor = vim
+	excludesfile = $HOME/.globalignore
+[merge]
+	tool = vimdiff
+[color]
+	branch = auto
+	diff = auto
+	interactive = auto
+	status = auto
 [alias]
 	st = status
 	co = checkout
-	df = diff
 	ci = commit
-[core]
-	excludesfile = /home/mapi/.globalignore
+	br = branch
+	df = diff
