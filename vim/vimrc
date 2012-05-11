@@ -140,3 +140,5 @@ nmap <silent> <leader>P :NERDTreeFind<cr>
 " toggle taglist plugin browskin window
 nmap <silent> <leader>o :TlistToggle<cr>
 
+" setting only small letters as hooks for easymotion
+let g:EasyMotion_keys = 'abcdefghijklmnopqrstuvwxyz'
