@@ -37,3 +37,6 @@
 [submodule "vim/bundle/easymotion"]
 	path = vim/bundle/easymotion
 	url = https://github.com/Lokaltog/vim-easymotion.git
+[submodule "vim/bundle/flake8"]
+	path = vim/bundle/flake8
+	url = https://github.com/nvie/vim-flake8.git
