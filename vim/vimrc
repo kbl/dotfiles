@@ -28,6 +28,7 @@ set nu " line numbers
 set scrolloff=5 " number of lines to keep above/below the cursor
 set sidescroll=1 " min. nr. of columns to scroll horizontally
 set nowrap " long lines doesnt wrap
+set encoding=utf-8 "sets the character encoding used inside Vim
 
 set background=dark
 colorscheme ir_black
