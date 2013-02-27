@@ -122,6 +122,12 @@ nmap <leader>j <C-W><C-J>
 nmap <leader>k <C-W><C-K>
 nmap <leader>l <C-W><C-L>
 
+" fast window closing
+nmap <leader>ch <C-W><C-H><C-W>c<C-W><C-P>
+nmap <leader>cj <C-W><C-J><C-W>c<C-W><C-P>
+nmap <leader>ck <C-W><C-K><C-W>c<C-W><C-P>
+nmap <leader>cl <C-W><C-L><C-W>c<C-W><C-P>
+
 " line moving
 nmap <C-Up> [e
 nmap <C-Down> ]e
