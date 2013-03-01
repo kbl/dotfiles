@@ -28,6 +28,7 @@ set nu " line numbers
 set scrolloff=5 " number of lines to keep above/below the cursor
 set sidescroll=1 " min. nr. of columns to scroll horizontally
 set nowrap " long lines doesnt wrap
+set encoding=utf-8 "sets the character encoding used inside Vim
 
 set background=dark
 colorscheme ir_black
@@ -120,6 +121,12 @@ nmap <leader>h <C-W><C-H>
 nmap <leader>j <C-W><C-J>
 nmap <leader>k <C-W><C-K>
 nmap <leader>l <C-W><C-L>
+
+" fast window closing
+nmap <leader>ch <C-W><C-H><C-W>c<C-W><C-P>
+nmap <leader>cj <C-W><C-J><C-W>c<C-W><C-P>
+nmap <leader>ck <C-W><C-K><C-W>c<C-W><C-P>
+nmap <leader>cl <C-W><C-L><C-W>c<C-W><C-P>
 
 " line moving
 nmap <C-Up> [e
