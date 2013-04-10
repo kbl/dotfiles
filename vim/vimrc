@@ -156,3 +156,7 @@ nmap <silent> <leader>o :TlistToggle<cr>
 
 " setting only small letters as hooks for easymotion
 let g:EasyMotion_keys = 'abcdefghijklmnopqrstuvwxyz'
+
+" ignoring flake8 checks
+" - E501 line too long
+let g:flake8_ignore = 'E501'
