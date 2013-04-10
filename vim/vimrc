@@ -137,6 +137,9 @@ vmap <C-Down> ]egv
 " stop higlithting searched text
 nmap <silent> <leader><space> :noh<cr>
 
+" toggle paste mode
+nmap <leader>O :set paste!<cr>
+
 """"""""""""""""""""
 " my plugin related mappings
 """"""""""""""""""""
