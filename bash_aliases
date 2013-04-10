@@ -2,6 +2,7 @@ alias ll='ls -lAF'
 alias l='ls -lAF'
 
 alias g=git
+alias cl='xsel --clipboard'
 
 # enable color support of ls and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then
