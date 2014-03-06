@@ -4,7 +4,7 @@
 	default = tracking
 [core]
 	editor = vim
-	excludesfile = $HOME/.globalignore
+	excludesfile = ~/.globalignore
 [merge]
 	tool = vimdiff
 [color]

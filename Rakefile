@@ -33,7 +33,7 @@ task :vim => :init_submodules do
 end
 
 task :git do
-  %w(gitconfig gitignore bash_aliases).each { |f| my_symlink(f) }
+  %w(gitconfig globalignore bash_aliases).each { |f| my_symlink(f) }
 end
 
 task :default => [:vim, :git]
