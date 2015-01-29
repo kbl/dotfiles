@@ -1,6 +1,9 @@
-*.swp
-*.swo
-*.swn
-*.swm
+*.swi
+*.swj
+*.swk
 *.swl
+*.swm
+*.swn
+*.swo
+*.swp
 mapi.todo
