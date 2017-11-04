@@ -36,7 +36,7 @@ syntax on
 
 set autoindent " take indent of new lie from previous line
 set smartindent " smart autoindenting for C programs
-set columns=120 " number of columns in the display
+" set columns=120 " number of columns in the display
 if &ft ==? 'python'
     highlight OverLength ctermbg=red ctermfg=white guibg=#592929
     match OverLength /\%81v.\+/
