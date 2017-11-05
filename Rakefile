@@ -16,7 +16,7 @@ task :init_submodules do
 end
 
 task :vim => :init_submodules do
-  my_symlink('nvim', ['.config', 'nvim'])
+  my_symlink('vim', ['.config', 'nvim'])
 end
 
 task :git do
