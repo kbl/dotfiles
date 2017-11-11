@@ -4,6 +4,7 @@ alias l='ls -lAF'
 alias g=git
 alias cl='xsel --clipboard'
 alias vim='nvim'
+alias vi='nvim'
 
 # enable color support of ls and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then
