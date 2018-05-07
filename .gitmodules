@@ -25,3 +25,6 @@
 [submodule "vim/bundle/tabular"]
 	path = vim/bundle/tabular
 	url = git://github.com/godlygeek/tabular.git
+[submodule "vim/bundle/go"]
+	path = vim/bundle/go
+	url = https://github.com/fatih/vim-go.git
