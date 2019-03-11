@@ -71,9 +71,6 @@ set wildmenu " use menu for command line completion
 
 set t_Co=256 " 256 colors in terminal
 
-let g:CommandTMatchWindowAtTop=1 " commant-t at top
-let g:CommandTMaxFiles=99999 " number of scanned files
-
 """"""""""""""""""""
 " my mappings
 """"""""""""""""""""
@@ -150,12 +147,6 @@ nmap <leader>O :set paste!<cr>
 " toggle nerdtree plugin browsing window
 nmap <silent> <leader>p :NERDTreeToggle<cr>
 nmap <silent> <leader>P :NERDTreeFind<cr>
-
-" toggle taglist plugin browskin window
-nmap <silent> <leader>o :TlistToggle<cr>
-
-" setting only small letters as hooks for easymotion
-let g:EasyMotion_keys = 'abcdefghijklmnopqrstuvwxyz'
 
 " ignoring flake8 checks
 " - E501 line too long

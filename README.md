@@ -1,7 +1,7 @@
 ## Installation ##
 
     cd ~
-    git clone https://github.com/kbl/vim-configuration .dotfiles
+    git clone https://github.com/kbl/dotfiles .dotfiles
     cd ~/.dotfiles
     rake
 
@@ -9,5 +9,5 @@
 
 Some plugins require packages to be installed on your machine:
 
-    sudo apt-get install python-flake8 # required to verify python code in vim
+    sudo apt install python-flake8 # required to verify python code in vim
 
